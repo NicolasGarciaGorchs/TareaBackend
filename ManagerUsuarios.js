@@ -1,9 +1,9 @@
-const fs = require('fs')
+const fs = require('fs');
 
 class ManagerUsuarios {
   path
   constructor(file) {
-    this.path = `${process.cwd()}/files/${file}`
+    this.path = `${process.cwd()}/files/Usuarios.json${file}`
   }
 
   async crearUsuario(usuario) {

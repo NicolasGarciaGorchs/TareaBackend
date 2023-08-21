@@ -1,8 +1,9 @@
-const ManagerUsuarios = require ('./ManagerUsuarios')
+const ManagerUsuarios = require ('./ManagerUsuarios.js')
 
 const managerUsuarios = new  ManagerUsuarios ('Usuarios.json')
 
-const usuario = {
+const usuario = 
+    {
     nombre: 'Nicolás',
     apellido: 'García Gorchs',
     edad: '31',
@@ -10,7 +11,7 @@ const usuario = {
     pago: true,
 }
 
-managerUsuarios.crearUsuario (usuario)
+managerUsuarios.crearUsuario(usuario)
 
 managerUsuarios
     .consultarUsuarios ()
